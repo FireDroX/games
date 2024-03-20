@@ -1,0 +1,108 @@
+.rps-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rps-game {
+  width: 15rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 25px;
+  transition: 0.3s background-color ease-in-out;
+}
+
+.rps-results {
+  scale: 4;
+}
+
+.rps-text {
+  scale: 1.5;
+  transition: 0.3s background-color ease-in-out;
+}
+
+.rps-choose {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.rps-choose > span {
+  border-radius: 50%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  scale: 2.5;
+  transition: 1s all ease;
+}
+
+.rps-choose > span:hover {
+  background-color: var(--primary25);
+  cursor: pointer;
+}
+
+/* The switch - the box around the slider */
+.rps-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 1.5rem;
+}
+
+/* Hide default HTML checkbox */
+.rps-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.rps-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--text35);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.rps-slider:before {
+  position: absolute;
+  content: "";
+  height: 1.1rem;
+  width: 1.1rem;
+  left: 4px;
+  bottom: 3px;
+  background-color: var(--text85);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .rps-slider:before {
+  -webkit-transform: translateX(34px);
+  -ms-transform: translateX(34px);
+  transform: translateX(34px);
+}
+
+/* Rounded sliders */
+.rps-slider.rps-round {
+  border-radius: 34px;
+}
+
+.rps-slider.rps-round:before {
+  border-radius: 50%;
+}
+
+.rps-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  height: 1.5rem;
+}

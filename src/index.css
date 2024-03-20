@@ -1,13 +1,103 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --text: #111611;
+  --bg: #f7f9f7;
+  --primary: #7b977c;
+  --secondary: #acbbbe;
+  --accent: #929ea9;
+  --text5: hsl(120, 13%, 8%, 5%);
+  --text10: hsl(120, 13%, 8%, 10%);
+  --text15: hsl(120, 13%, 8%, 15%);
+  --text20: hsl(120, 13%, 8%, 20%);
+  --text25: hsl(120, 13%, 8%, 25%);
+  --text30: hsl(120, 13%, 8%, 30%);
+  --text35: hsl(120, 13%, 8%, 35%);
+  --text40: hsl(120, 13%, 8%, 40%);
+  --text45: hsl(120, 13%, 8%, 45%);
+  --text50: hsl(120, 13%, 8%, 50%);
+  --text55: hsl(120, 13%, 8%, 55%);
+  --text60: hsl(120, 13%, 8%, 60%);
+  --text65: hsl(120, 13%, 8%, 65%);
+  --text70: hsl(120, 13%, 8%, 70%);
+  --text75: hsl(120, 13%, 8%, 75%);
+  --text80: hsl(120, 13%, 8%, 80%);
+  --text85: hsl(120, 13%, 8%, 85%);
+  --text90: hsl(120, 13%, 8%, 90%);
+  --text95: hsl(120, 13%, 8%, 95%);
+  --primary5: hsl(122, 12%, 54%, 5%);
+  --primary10: hsl(122, 12%, 54%, 10%);
+  --primary15: hsl(122, 12%, 54%, 15%);
+  --primary20: hsl(122, 12%, 54%, 20%);
+  --primary25: hsl(122, 12%, 54%, 25%);
+  --primary30: hsl(122, 12%, 54%, 30%);
+  --primary35: hsl(122, 12%, 54%, 35%);
+  --primary40: hsl(122, 12%, 54%, 40%);
+  --primary45: hsl(122, 12%, 54%, 45%);
+  --primary50: hsl(122, 12%, 54%, 50%);
+  --primary55: hsl(122, 12%, 54%, 55%);
+  --primary60: hsl(122, 12%, 54%, 60%);
+  --primary65: hsl(122, 12%, 54%, 65%);
+  --primary70: hsl(122, 12%, 54%, 70%);
+  --primary75: hsl(122, 12%, 54%, 75%);
+  --primary80: hsl(122, 12%, 54%, 80%);
+  --primary85: hsl(122, 12%, 54%, 85%);
+  --primary90: hsl(122, 12%, 54%, 90%);
+  --primary95: hsl(122, 12%, 54%, 95%);
+  --secondary5: hsl(190, 12%, 71%, 5%);
+  --secondary10: hsl(190, 12%, 71%, 10%);
+  --secondary15: hsl(190, 12%, 71%, 15%);
+  --secondary20: hsl(190, 12%, 71%, 20%);
+  --secondary25: hsl(190, 12%, 71%, 25%);
+  --secondary30: hsl(190, 12%, 71%, 30%);
+  --secondary35: hsl(190, 12%, 71%, 35%);
+  --secondary40: hsl(190, 12%, 71%, 40%);
+  --secondary45: hsl(190, 12%, 71%, 45%);
+  --secondary50: hsl(190, 12%, 71%, 50%);
+  --secondary55: hsl(190, 12%, 71%, 55%);
+  --secondary60: hsl(190, 12%, 71%, 60%);
+  --secondary65: hsl(190, 12%, 71%, 65%);
+  --secondary70: hsl(190, 12%, 71%, 70%);
+  --secondary75: hsl(190, 12%, 71%, 75%);
+  --secondary80: hsl(190, 12%, 71%, 80%);
+  --secondary85: hsl(190, 12%, 71%, 85%);
+  --secondary90: hsl(190, 12%, 71%, 90%);
+  --secondary95: hsl(190, 12%, 71%, 95%);
+  --accent5: hsl(209, 12%, 62%, 5%);
+  --accent10: hsl(209, 12%, 62%, 10%);
+  --accent15: hsl(209, 12%, 62%, 15%);
+  --accent20: hsl(209, 12%, 62%, 20%);
+  --accent25: hsl(209, 12%, 62%, 25%);
+  --accent30: hsl(209, 12%, 62%, 30%);
+  --accent35: hsl(209, 12%, 62%, 35%);
+  --accent40: hsl(209, 12%, 62%, 40%);
+  --accent45: hsl(209, 12%, 62%, 45%);
+  --accent50: hsl(209, 12%, 62%, 50%);
+  --accent55: hsl(209, 12%, 62%, 55%);
+  --accent60: hsl(209, 12%, 62%, 60%);
+  --accent65: hsl(209, 12%, 62%, 65%);
+  --accent70: hsl(209, 12%, 62%, 70%);
+  --accent75: hsl(209, 12%, 62%, 75%);
+  --accent80: hsl(209, 12%, 62%, 80%);
+  --accent85: hsl(209, 12%, 62%, 85%);
+  --accent90: hsl(209, 12%, 62%, 90%);
+  --accent95: hsl(209, 12%, 62%, 95%);
 }
