@@ -1,0 +1,11 @@
+.nav-container > img {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-container > img:hover {
+  cursor: pointer;
+}
