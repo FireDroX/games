@@ -1,0 +1,14 @@
+.home-container {
+  width: 40rem;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.home-container:hover > .card-container:not(:hover) {
+  filter: blur(10px);
+  scale: 0.9;
+}
