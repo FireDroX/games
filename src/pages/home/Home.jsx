@@ -12,7 +12,12 @@ const Home = () => {
             path="rps"
             color="#9E87F1"
           />
-          <GameBox color="#9B6869" />
+          <GameBox
+            name="Password"
+            description="Regex Password Input"
+            path="password"
+            color="#9B6869"
+          />
           <GameBox color="#E9A57E" />
           <GameBox color="#BAABBF" />
           <GameBox color="#EC5ED8" />

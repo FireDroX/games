@@ -1,0 +1,142 @@
+.pwd-container {
+  width: 13.5rem;
+  height: 12.5rem;
+  position: relative;
+  padding: 2.5rem 3.5rem;
+  background-color: hsl(194, 30%, 31%, 55%);
+  border: 2px solid hsl(194, 30%, 31%, 55%);
+  border-radius: 35px;
+}
+
+.pwd-input {
+  max-width: 190px;
+  height: 26px;
+  background-color: hsl(180, 3%, 94%, 15%);
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.pwd-label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: hsl(180, 3%, 94%, 65%);
+  transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.pwd-input:hover,
+.pwd-input:focus,
+.pwd-input-group:hover .pwd-input {
+  outline: none;
+  border-color: #05060f;
+}
+
+.pwd-input-group:hover .pwd-label,
+.pwd-input:focus {
+  color: #05060fc2;
+}
+
+.pwd-inputContainer {
+  position: relative;
+}
+
+.pwd-icon {
+  position: absolute;
+  right: 10px;
+  top: calc(50% + 2px);
+}
+
+.pwd-requirements {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: left;
+}
+
+.pwd-requirements > small,
+.pwd-container > button {
+  transition: all 0.5s ease;
+}
+
+.pwd-container > button {
+  position: absolute;
+  border: 1px solid currentColor;
+  color: hsl(180, 3%, 94%, 65%);
+  background-color: #05060f;
+  bottom: 10px;
+  right: 25px;
+  padding: 0.3em 0.6em;
+  border-radius: 15px;
+}
+
+.pwd-container > button:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  height: 12.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.3rem;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: var(--color-primary);
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px var(--color-primary);
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px var(--color-primary);
+  }
+}
