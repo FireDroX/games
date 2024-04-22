@@ -14,7 +14,7 @@ const Home = () => {
           />
           <GameBox
             name="Password"
-            description="Regex Password Input"
+            description="REGEX Verification"
             path="password"
             color="#9B6869"
           />
