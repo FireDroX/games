@@ -1,6 +1,6 @@
 .pwd-container {
   width: 13.5rem;
-  height: 12.5rem;
+  height: 13rem;
   position: relative;
   padding: 2.5rem 3.5rem;
   background-color: hsl(194, 30%, 31%, 55%);
@@ -82,7 +82,7 @@
 
 .wrapper {
   display: flex;
-  height: 12.5rem;
+  height: 13rem;
   justify-content: center;
   align-items: center;
   margin-left: 0.3rem;
