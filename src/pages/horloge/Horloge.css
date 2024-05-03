@@ -1,0 +1,36 @@
+@import url("https://fonts.cdnfonts.com/css/seven-segment");
+
+.horloge-container {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  color: white;
+  user-select: none;
+  font-family: "Seven Segment", sans-serif;
+}
+
+.horloge {
+  position: absolute;
+  height: 10rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.horloge span {
+  color: black;
+}
+
+.quadrant ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  min-width: 5rem;
+}

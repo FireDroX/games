@@ -18,7 +18,12 @@ const Home = () => {
             path="password"
             color="#9B6869"
           />
-          <GameBox color="#E9A57E" />
+          <GameBox
+            name="Horloge"
+            description="7seg Clock"
+            path="horloge"
+            color="#E9A57E"
+          />
           <GameBox color="#BAABBF" />
           <GameBox color="#EC5ED8" />
           <GameBox color="#D3FE79" />
