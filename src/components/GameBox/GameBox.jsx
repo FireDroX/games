@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const GameBox = ({ name, description, color = "var(--bg)", path }) => {
   const navigate = useNavigate();
-  const handleNavigate = () => navigate("/games/" + path);
+  const handleNavigate = () => navigate(`/games?page=${path}`);
 
   return (
     <div

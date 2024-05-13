@@ -1,5 +1,6 @@
 import "./App.css";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./components/Navbar/Navbar";
 
@@ -9,16 +10,32 @@ import PwdInput from "./pages/password/PwdInput";
 import Horloge from "./pages/horloge/Horloge";
 
 function App() {
+  function DynamicPage() {
+    const [page, setPage] = useState(null);
+    const location = useLocation();
+
+    useEffect(() => {
+      const queryParams = new URLSearchParams(location.search);
+      setPage(queryParams.get("page"));
+    }, [location]);
+
+    switch (page) {
+      case "rps":
+        return <RPS />;
+      case "horloge":
+        return <Horloge />;
+      case "password":
+        return <PwdInput />;
+      default:
+        return <Home />;
+    }
+  }
+
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/games" element={<Home />} />
-        <Route path="/games/rps" element={<RPS />} />
-        <Route path="/games/password" element={<PwdInput />} />
-        <Route path="/games/horloge" element={<Horloge />} />
-
-        <Route path="*" element={<Navigate to={"/games"} />} />
+        <Route path="/games" element={<DynamicPage />} />
       </Routes>
     </>
   );
