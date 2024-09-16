@@ -24,8 +24,18 @@ const Home = () => {
             path="horloge"
             color="#E9A57E"
           />
-          <GameBox color="#BAABBF" />
-          <GameBox color="#EC5ED8" />
+          <GameBox
+            name="Pokemon"
+            description="Choose your Pokemon"
+            path="pokemon"
+            color="#BAABBF"
+          />
+          <GameBox
+            name="Sudoku"
+            description="Just a random Sudoku"
+            path="sudoku"
+            color="#EC5ED8"
+          />
           <GameBox color="#D3FE79" />
           <GameBox color="#6277AE" />
           <GameBox color="#6ECFAA" />

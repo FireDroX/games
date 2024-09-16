@@ -8,6 +8,8 @@ import Home from "./pages/home/Home";
 import RPS from "./pages/rps/RPS";
 import PwdInput from "./pages/password/PwdInput";
 import Horloge from "./pages/horloge/Horloge";
+import Pokemon from "./pages/pokemon/Pokemon";
+import Sudoku from "./pages/sudoku/Sudoku";
 
 function App() {
   function DynamicPage() {
@@ -26,6 +28,10 @@ function App() {
         return <Horloge />;
       case "password":
         return <PwdInput />;
+      case "pokemon":
+        return <Pokemon />;
+      case "sudoku":
+        return <Sudoku />;
       default:
         return <Home />;
     }

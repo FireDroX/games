@@ -78,7 +78,7 @@ const RPS = () => {
             <div
               className="rps-text"
               style={{
-                color: flag === 0 ? "var(--primary)" : "var(--text)",
+                color: flag === 0 ? "var(--bg)" : "var(--text)",
               }}
             >
               {textsArray[flag]}
